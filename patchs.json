@@ -1,0 +1,81 @@
+{
+  "version": "++Fortnite+Release-41.10-CL-55335788-Windows",
+  "patches": [
+    {
+      "name": "Cannot modify cooked assets",
+      "offsets": [
+        {
+          "offset": "D660E28",
+          "find": "32 C0",
+          "replace": "90 90"
+        },
+        {
+          "offset": "D660E1A",
+          "find": "74",
+          "replace": "EB"
+        }
+      ]
+    },
+    {
+      "name": "Unable to edit cooked asset",
+      "offsets": [
+        {
+          "offset": "52F42D8",
+          "find": "0F 84 6B 01 00 00",
+          "replace": "E9 6C 01 00 00 90"
+        }
+      ]
+    },
+    {
+      "name": "Copy Objects",
+      "offsets": [
+        {
+          "offset": "5048910",
+          "find": "0F 85 6D 02 00 00",
+          "replace": "90 90 90 90 90 90"
+        }
+      ]
+    },
+    {
+      "name": "Package is cooked or missing editor data",
+      "offsets": [
+        {
+          "offset": "5048DE1",
+          "find": "74",
+          "replace": "EB"
+        }
+      ]
+    },
+    {
+      "name": "Is Level Locked",
+      "offsets": [
+        {
+          "offset": "312FC80",
+          "find": "48 89 5C 24 20",
+          "replace": "30 C0 C3 90 90"
+        }
+      ]
+    },
+    {
+      "name": "Drag And Drop Operations",
+      "offsets": [
+        {
+          "offset": "2CC30F51",
+          "find": "01",
+          "replace": "00"
+        }
+      ]
+    },
+    {
+      "name": "Launch Options or Item Definition Fix",
+      "notes": "-disableplugins=\"AtomVK,FNChaosVD,ValkyrieFortnite,FNTraceBasedDebuggers,FNRewindDebugger,UEFN\"",
+      "offsets": [
+        {
+          "offset": "212436F",
+          "find": "E8 7C A1 FD FF",
+          "replace": "90 90 90 90 90"
+        }
+      ]
+    }
+  ]
+}
